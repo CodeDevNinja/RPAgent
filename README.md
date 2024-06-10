@@ -32,33 +32,36 @@ RPAgent作为一款高效、灵活的移动端任务自动化工具，将极大�
 
 ## 自定义操作
 定义了一组移动端任务自动化操作的指令，可以根据具体的需求来自定义任务的执行流程。以下是每个操作的简要介绍：
-操作	描述
-LAUNCH_APP	启动应用程序
-STOP_APP	停止应用程序
-CLICK	点击
-INPUT	输入文本
-SWIPE	滑动
-PULL_TO_REFRESH	下拉刷新
-SWIPE_PAGINATION	滑动翻页
-WAIT_FOR_ELEMENT	等待元素加载
-EXTRACT_CONTENT	提取内容
-LONG_CLICK	长按
-DOUBLE_CLICK	双击
-SCROLL	滚动
-DRAG_AND_DROP	拖拽
-PINCH	捏合
-ZOOM	放大
-HARD_KEY_PRESS	模拟硬件按键点击
-HARD_KEY_LONG_PRESS	模拟硬件按键长按
-TAKE_SCREENSHOT	截屏
-GET_TEXT	获取文本内容
-SET_TEXT	设置文本内容
-TOGGLE_SWITCH	切换开关状态
-SELECT_FROM_DROPDOWN	从下拉菜单中选择项
-BACK	返回上一页
-HOME	回到主屏幕
-LAUNCH_ACTIVITY	启动指定的Activity
-RESTART_APP	重新启动应用程序
-CLEAR_DATA	清除应用程序数据
-NOTIFICATION	操作通知
-OPEN_URL	打开网页链接
+| 操作               | 描述                           |
+|------------------|--------------------------------|
+| LAUNCH_APP       | 启动应用程序                   |
+| STOP_APP         | 停止应用程序                   |
+| CLICK            | 点击                           |
+| INPUT            | 输入文本                       |
+| SWIPE            | 滑动                           |
+| PULL_TO_REFRESH  | 下拉刷新                       |
+| SWIPE_PAGINATION | 滑动翻页                       |
+| WAIT_FOR_ELEMENT | 等待元素加载                   |
+| EXTRACT_CONTENT  | 提取内容                       |
+| LONG_CLICK       | 长按                           |
+| DOUBLE_CLICK     | 双击                           |
+| SCROLL           | 滚动                           |
+| DRAG_AND_DROP    | 拖拽                           |
+| PINCH            | 捏合                           |
+| ZOOM             | 放大                           |
+| HARD_KEY_PRESS   | 模拟硬件按键点击               |
+| HARD_KEY_LONG_PRESS | 模拟硬件按键长按           |
+| TAKE_SCREENSHOT  | 截屏                           |
+| GET_TEXT         | 获取文本内容                   |
+| SET_TEXT         | 设置文本内容                   |
+| TOGGLE_SWITCH    | 切换开关状态                   |
+| SELECT_FROM_DROPDOWN | 从下拉菜单中选择项         |
+| BACK             | 返回上一页                     |
+| HOME             | 回到主屏幕                     |
+| LAUNCH_ACTIVITY  | 启动指定的Activity             |
+| RESTART_APP      | 重新启动应用程序               |
+| CLEAR_DATA       | 清除应用程序数据               |
+| NOTIFICATION     | 操作通知                       |
+| OPEN_URL         | 打开网页链接                   |
+
+这些操作可以根据具体的需求组合成自定义的任务流程，实现移动端任务的自动化。
