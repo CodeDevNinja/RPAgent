@@ -1,0 +1,91 @@
+{
+    "workflow_name": "小红书-搜索点赞",
+    "events": [
+        {
+            "action": "launch_app",
+            "package_name": "com.xingin.xhs",
+            "use_monkey": true
+        },
+        {
+            "action": "input",
+            "selector": {
+                "type": "xpath",
+                "value": "//*[@resource-id=\"com.xingin.xhs:id/hy8\"]"
+            },
+            "text": ""
+        },
+        {
+            "action": "click",
+            "selector": {
+                "type": "xpath",
+                "value": "//*[@resource-id='com.xingin.xhs:id/cg0']"
+            }
+        },
+        {
+            "action": "click",
+            "selector": {
+                "type": "xpath",
+                "value": "//*[@text='图文']"
+            }
+        },
+        {
+            "action": "click",
+            "selector": {
+                "type": "position",
+                "value": {
+                    "x": 0.7,
+                    "y": 0.8
+                }
+            }
+        },
+        {
+            "times": 20,
+            "actions": [
+                {
+                    "times": 4,
+                    "actions": [
+                        {
+                            "action": "click",
+                            "selector": {
+                                "type": "xpath",
+                                "value": "//androidx.recyclerview.widget.RecyclerView//android.widget.FrameLayout[{{index}}]",
+                                "start": 1
+                            }
+                        },
+                        {
+                            "action": "extract_content",
+                            "selectors": {
+                                "post_title": {
+                                    "type": "xpath",
+                                    "value": "//*[@resource-id='com.xingin.xhs:id/gh4']"
+                                },
+                                "post_content": {
+                                    "type": "xpath",
+                                    "value": "//*[@resource-id=\"com.xingin.xhs:id/dwu\"]"
+                                },
+                                "post_author": {
+                                    "type": "xpath",
+                                    "value": "//*[@resource-id='com.xingin.xhs:id/nickNameTV']"
+                                }
+                            },
+                            "output_file": "extracted_content小姐姐.json"
+                        },
+                        {
+                            "action": "click",
+                            "selector": {
+                                "type": "xpath",
+                                "value": "//*[@resource-id=\"com.xingin.xhs:id/a03\"]"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "action": "swipe_pagination",
+                    "direction": "up",
+                    "pages": 1,
+                    "duration": 1
+                }
+            ]
+        }
+    ]
+}
